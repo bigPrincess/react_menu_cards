@@ -1,6 +1,6 @@
 
 ### npm源设置
-npm set registry http://npm.corp.rs.com:4873/
+npm set registry http://npm.corp.rs.com/
 
 ## 使用说明:
 npm run start: 运行本地开发环境
