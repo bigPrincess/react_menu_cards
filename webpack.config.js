@@ -24,7 +24,6 @@ module.exports = (webpackConfig) => {
     retVal.plugins.push(new CopyWebpackPlugin([
         // { from: './src/modelproxy/mocks', to: 'mocks' },
         { from: './src/assets', to: 'assets' },
-        { from: './src/componentsdemo/assets', to: 'assets' }
     ]));
     // 环境
     //通过DefinePlugin可以定义一些全局的变量，我们可以在模块当中直接使用这些变量，无需作任何声明，看一个简单的webpack配置
@@ -34,9 +33,6 @@ module.exports = (webpackConfig) => {
         __PROD__: JSON.stringify(process.env.NODE_ENV === 'production'),
         __STAG__: JSON.stringify(process.env.NODE_ENV === 'stg'),
     }));
-
-
-    retVal.output.publicPath = '/jc_h5';
 
     return retVal;
 };

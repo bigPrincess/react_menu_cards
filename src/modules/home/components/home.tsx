@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { hoc } from '../containers/home';
 import { IProps } from '../constants/home';
-import { MenuComponent } from "../../common/menu/index";
-
 import '../styles/home.scss';
 
 export class HomeComponent extends React.Component<IProps, any> {
@@ -10,7 +8,6 @@ export class HomeComponent extends React.Component<IProps, any> {
         return (
             <div className="">
                 主页面
-                <MenuComponent />
             </div>
         );
     }
