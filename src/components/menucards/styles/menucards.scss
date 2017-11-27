@@ -1,3 +1,8 @@
 .menucards-content {
     width: 100%;
+    .children {
+        position: absolute;
+        display: inline-block;
+        border: 1px solid #e5e5e5;
+    }
 }
